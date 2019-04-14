@@ -1,0 +1,50 @@
+  820  tail -n+13900 otoos10.txt >> darwin.txt 
+  821  wc -l darwin.txt 
+  822  grep -i -w evol darwin.txt 
+  823  grep -i -w evol darwin.txt | wc -l
+  824  grep -i -w "evol" darwin.txt | wc -l
+  825  grep -i -w "evolution" darwin.txt | wc -l
+  826  grep -i -w "evolved" darwin.txt | wc -l
+  827  grep -i -w "Wallace" darwin.txt | wc -l
+  828* grep -i -natural selection" darwin.txt | wc -l
+  829  grep -i -w "the" darwin.txt | wc -l
+  830  grep -i -w "descent" darwin.txt | wc -l
+  831  grep -i -w "modification" darwin.txt | wc -l
+  832  nano command-Darwin.txt
+  833  ls
+  834  cd Temperatures/
+  835  ls
+  836  grep TMAX 180[0-3].csv
+  837  grep *TMAX *0101 180[0-3].csv
+  838  grep *0101 180[0-3].csv | grep *TMAX 180[0-3].csv
+  839  grep *01 180[0-3].csv | grep *TMAX 180[0-3].csv
+  840  grep *TMAX 180[0-3].csv
+  841  ls
+  842  grep 0101 180[0-3].csv | grep TMAX 180[0-3].csv
+  843  grep 0101 180[0-3].csv
+  844  grep 180[0-3]0101 180[0-3].csv | grep TMAX 180[0-3].csv
+  845  grep 180[0-3]0101 180[0-3].csv
+  846  grep 180[0-3]0101 TMAX 180[0-3].csv 
+  847  grep 180[0-3]0101,TMAX 180[0-3].csv 
+  848  cd ../
+  849  nano command-Darwin.txt 
+  850  grep TMAX 1800.csv | sort -n | head -n 1
+  851  cd Temperatures/
+  852  grep TMAX 1800.csv | sort -n | head -n 1
+  853  less 1800.csv
+  854  ls
+  855  grep TMAX 1800.csv | sort -n | tail -n 1
+  856  grep TMAX 1800.csv
+  857  grep TMAX 1800.csv | cut -d, -f 4 1800.csv | sort -r -n | head -n 1
+  858  grep TMAX 1800.csv | cut -d, -f 4 1800.csv
+  859  less 1800.csv
+  860  grep TMAX 1800.csv | sort -d 1800.csv
+  861  grep TMAX 1800.csv | sort -f 4 1800.csv
+  862  grep TMAX 1800.csv | sort -d -f 4 1800.csv
+  863  grep TMAX 1800.csv | sort -d 1800.csv | -f 4 1800.csv
+  864  grep TMAX 1800.csv | sort -d 1800.csv | cut -f 4 1800.csv
+  865  grep TMAX 1800.csv | sort -k 4 1800.csv 
+  866  grep TMAX 1800.csv
+  867  grep TMAX 1800.csv | sort -r -n 1800.csv
+  868  grep TMAX 1800.csv | cut -d, -f 4 1800.csv | sort -n | tail -n 1
+  869  history | tail -n 50 > For_Daniel_realData.txt
